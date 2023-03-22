@@ -103,8 +103,19 @@
       </section>
       
       <div>
-      <form action="https://s2j.cc/H/ODOR/submission" method="post" class="m-6 box" target="frame-submit">
-      <div class="px-5 py-6">
+<style>
+  form .success-msg {
+    display: none;
+  }
+
+
+  form.submitted .success-msg {
+    display: block;
+  }
+</style>
+
+      <form action="https://s2j.cc/H/ODOR/submission" onsubmit="this.disabled=true; this.clasName+=' submitted'" method="post" class="m-6 box" target="frame-submit">
+      <div class="px-5 py-6 success-msg">
         <div class="notification is-success is-light">
           <h3 class="mb-2 is-size-5 has-text-weight-bold">Success!!</h3>
           <p class="is-size-6">Your information was succesfully submitted! Thanks for your help!</p>
